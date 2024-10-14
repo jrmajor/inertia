@@ -9,7 +9,7 @@ export default function inertia(config: string | PluginConfig): Plugin {
   const resolvedConfig = resolveConfig(config)
 
   return {
-    name: '@inertiajs/svelte/ssr',
+    name: '@inertiajs/core/vite',
     async configureServer(server) {
       return () =>
         server.middlewares.use(async (req, res, next) => {
